@@ -184,7 +184,7 @@
         <mxCell id="3-55reZfXw2jaAEWjRdC-63" value="account_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="3-55reZfXw2jaAEWjRdC-60" vertex="1">
           <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3-55reZfXw2jaAEWjRdC-64" value="绑定关系表：客户输入运维账号密码登录成功之后，属于登录成功。拥有绑定关系。&lt;div&gt;下次客户页面点击商户按钮，就直接进来，不进行账户密码登录了。&lt;/div&gt;&lt;div&gt;注意：其他地方登录，这里会被挤下线，并且会取消绑定关系&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="3-55reZfXw2jaAEWjRdC-64" value="绑定关系表：客户输入运维账号密码登录成功之后，属于登录成功。拥有绑定关系。&lt;div&gt;下次客户页面点击商户按钮，就直接进来，不进行账户密码登录了。&lt;/div&gt;&lt;div&gt;注意：其他地方登录，这里会被挤下线，并且会取消绑定关系&lt;/div&gt;&lt;div&gt;注意：还是要绑定表，可以记录绑定时间以及，有绑定记录&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="310" y="1445" width="610" height="110" as="geometry" />
         </mxCell>
         <mxCell id="3-55reZfXw2jaAEWjRdC-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3-55reZfXw2jaAEWjRdC-56" target="3-55reZfXw2jaAEWjRdC-62" edge="1">
@@ -305,8 +305,23 @@
         <mxCell id="bl5rX0ZxFLSlVwZk4xWC-10" value="账号密码&lt;div&gt;（账号/密码）&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="2310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-13" value="无感登录&lt;div&gt;（当前用户 id/？？？）&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-13" value="无感登录&lt;div&gt;（当前用户 id/？？？）&lt;/div&gt;&lt;div&gt;应该使用 token 来获取用户 id&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="2460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;注意：&lt;/h1&gt;&lt;div&gt;客户 a 绑定了账号 x，客户 a 切换到账号 x 了，这个时候客户b 登录了账号 x 并且绑定了，此时此刻客户 a 的账号应该被挤下线。&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2630" width="610" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-16" value="成功返回 pc 账号 token" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="345" y="2160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-17" value="成功返回小程序/apptoken" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="2325" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;注意 2：&lt;/h1&gt;&lt;div&gt;客户 a 在小程序上登录账号 x，这个时候找好 x 的其他所有设备（app应该也直接过期还是校验是不是当前客户 a），&lt;/div&gt;&lt;div&gt;比如说：客户 a 在小程序上登录账号 x，这个时候客户 b 在 app 来登录账号 b 并且进行绑定操作，我们操作如下&lt;/div&gt;&lt;div&gt;1.pc 账号我们不动，不同平台，&lt;/div&gt;&lt;div&gt;2.同一个平台（app）我们应该挤下线，并且更新我们 a 的绑定关系&lt;/div&gt;&lt;div&gt;3.另一个平台（移动端），判断是否为当前客户 b 如果是客户 b，我们不挤下线，如果是不是同一个客户我们强制下线&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2740" width="800" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;注意 3：&lt;/h1&gt;&lt;div&gt;我们无感登录的时候的安全问题，我们之前直接无感登录使用的直接传手机号码，当传参这样是很危险的，我们应该使用客户登录之后的数据来判断是否为安全数据，不应该使用，客户公开的数据（电话号码）或半公开消息（用户 id），我们应该使用用户的 token，我们判断合法性，再 token 来判断用户 id&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2880" width="660" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
