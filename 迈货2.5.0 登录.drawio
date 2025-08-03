@@ -263,6 +263,51 @@
         <mxCell id="3-55reZfXw2jaAEWjRdC-91" value="数据库删除绑定关系，&lt;div&gt;账户表中删除客户 id&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-820" y="630" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bl5rX0ZxFLSlVwZk4xWC-1" target="bl5rX0ZxFLSlVwZk4xWC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bl5rX0ZxFLSlVwZk4xWC-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="2380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-1" value="登录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="2250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bl5rX0ZxFLSlVwZk4xWC-2" target="bl5rX0ZxFLSlVwZk4xWC-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-2" value="pc" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="2130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bl5rX0ZxFLSlVwZk4xWC-5" target="bl5rX0ZxFLSlVwZk4xWC-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="2410" />
+              <mxPoint x="140" y="2340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bl5rX0ZxFLSlVwZk4xWC-5" target="bl5rX0ZxFLSlVwZk4xWC-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="2410" />
+              <mxPoint x="140" y="2490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-5" value="移动端" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="2380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-7" value="账号密码&lt;div&gt;（账号/密码）&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="2130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-10" value="账号密码&lt;div&gt;（账号/密码）&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="2310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bl5rX0ZxFLSlVwZk4xWC-13" value="无感登录&lt;div&gt;（当前用户 id/？？？）&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="2460" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
